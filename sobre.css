@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+header {
+    height: calc(128vh - 150px);
+    background: no-repeat center/cover url('assets/Altar_Convento.jpg');
+
+}
+
+
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+
+}
+
+header nav p {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: rgb(255, 255, 255);
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+
+.header-content h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(247, 239, 173);
+    text-shadow: 2px 2px 4px rgb(87, 84, 84);
+
+}
+
+.header-content p {
+    max-width: 500px;
+    margin: auto;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(87, 84, 84);
+    color: rgb(255, 255, 255)
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+center {
+    height: calc(140vh - 150px);
+    background: no-repeat center/cover url('assets/convento_externo.jpg');
+
+
+}
+
+
+.center-content h1 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2rem;
+    color: rgb(236, 236, 236);
+    text-shadow: 2px 2px 4px rgb(34, 33, 33);
+}
+
+
+.center-content p {
+    max-width: 500px;
+    margin: auto;
+    font-size: large;
+    text-shadow: 2px 2px 4px rgb(87, 84, 84);
+    color: rgb(12, 12, 12)
+}
+
+
+footer {
+    height: calc(125vh - 150px);
+    background: no-repeat center/cover url('assets/janela_convento.jpg');
+}
+
+.footer-content h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(177, 171, 121);
+    text-shadow: 2px 2px 4px rgb(39, 34, 34);
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: auto;
+    font-size: large;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    color: rgb(231, 231, 231);
+}
+
+.rodape {
+    list-style: none;
+}
